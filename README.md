@@ -19,7 +19,7 @@ Expose, bind, or reverse proxy them as needed.
 
 ### sync
 - User: `nonroot` (UID `65532`) by default.
-    - If changed, **the volume's permissions must match**.
+    - If changed, **the `data` volume's permissions must match the user**.
     - On TrueNAS, you can use `568`, the built-in `apps` user.
 - Volume `data`: mount at `/data`, read/write for UID `65532` (`nonroot`), or match the image's user if changed.
 
